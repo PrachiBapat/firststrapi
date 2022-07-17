@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shows",
+  "info": {
+    "singularName": "show",
+    "pluralName": "shows",
+    "displayName": "Show",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ShowName": {
+      "type": "string"
+    },
+    "ShowThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ShowTrailer": {
+      "type": "string"
+    },
+    "Showcast": {
+      "type": "text"
+    },
+    "ShowDescription": {
+      "type": "text"
+    },
+    "ShowDay": {
+      "type": "enumeration",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    "FullyReleased": {
+      "type": "boolean",
+      "default": false
+    },
+    "ShowTime": {
+      "type": "time"
+    },
+    "channel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::channel.channel",
+      "inversedBy": "shows"
+    }
+  }
+}

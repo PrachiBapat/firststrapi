@@ -1,0 +1,85 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_mes",
+  "info": {
+    "singularName": "about-me",
+    "pluralName": "about-mes",
+    "displayName": "AboutMe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "CellPhone": {
+      "type": "string"
+    },
+    "Website": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Headshot": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "BioSummary": {
+      "type": "text"
+    },
+    "FullBio": {
+      "type": "richtext"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "GitHub": {
+      "type": "string"
+    },
+    "Behance": {
+      "type": "string"
+    },
+    "Skill": {
+      "type": "string"
+    },
+    "hobbies": {
+      "type": "text"
+    },
+    "education": {
+      "type": "text"
+    },
+    "WebsiteHeroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

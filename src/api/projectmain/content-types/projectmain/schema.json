@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projectmains",
+  "info": {
+    "singularName": "projectmain",
+    "pluralName": "projectmains",
+    "displayName": "Projectmain",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Summary": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "WebLink": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Trailer": {
+      "type": "string"
+    },
+    "StartDate": {
+      "type": "date"
+    },
+    "EndDate": {
+      "type": "date"
+    },
+    "ToolsUsed": {
+      "type": "text"
+    },
+    "ClientName": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Web-design",
+        "Graphic Design"
+      ]
+    },
+    "skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "projectmain"
+    }
+  }
+}
